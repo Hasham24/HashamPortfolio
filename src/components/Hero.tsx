@@ -121,15 +121,17 @@ const Hero = () => {
               Get In Touch
             </button>
 
-            <button
-              onClick={handleDownloadCV}
-              className="px-6 py-3 rounded-lg neo-blur text-foreground font-medium hover-lift group relative"
-            >
-              <span className="flex items-center gap-2">
-                <Download className="w-5 h-5" />
-                Resume
-              </span>
-            </button>
+            <div className="w-full sm:w-auto flex justify-center sm:justify-start">
+              <button
+                onClick={handleDownloadCV}
+                className="px-6 py-3 rounded-lg neo-blur text-foreground font-medium hover-lift group relative w-full sm:w-auto"
+              >
+                <span className="flex items-center gap-2 justify-center">
+                  <Download className="w-5 h-5" />
+                  Resume
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
