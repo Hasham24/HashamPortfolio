@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,8 +63,11 @@ const Navbar = () => {
         </nav>
 
         <div className="md:hidden">
-          {/* Mobile menu - simplified for this version */}
-          <button className="text-foreground">
+          {/* Mobile menu with toggle */}
+          <button
+            className="text-foreground"
+            onClick={() => setShowMobileMenu((prev) => !prev)}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -79,6 +83,24 @@ const Navbar = () => {
               />
             </svg>
           </button>
+          {showMobileMenu && (
+            <div className="absolute right-4 top-16 bg-background rounded-lg shadow-lg p-4 flex flex-col space-y-4 z-50 w-48">
+              {["about", "skills", "projects", "experience", "contact"].map(
+                (item) => (
+                  <button
+                    key={item}
+                    onClick={() => {
+                      scrollToSection(item);
+                      setShowMobileMenu(false);
+                    }}
+                    className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors text-left"
+                  >
+                    {item.charAt(0).toUpperCase() + item.slice(1)}
+                  </button>
+                )
+              )}
+            </div>
+          )}
         </div>
       </div>
     </header>
