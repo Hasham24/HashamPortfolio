@@ -50,7 +50,7 @@ const Hero = () => {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const children = containerRef.current?.children;
@@ -93,9 +93,9 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 text-balance">
-            With over 5 years of experience specializing in React Native,
-            Javascript, Node.js, and TypeScript, I build scalable, user-focused
-            mobile applications that deliver exceptional experiences.
+            With 6+ years of experience specializing in React Native, Flutter,
+            JavaScript, Node.js, TypeScript, and Dart, I build scalable, user
+            focused mobile applications that deliver exceptional experiences.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
