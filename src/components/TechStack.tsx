@@ -70,6 +70,22 @@ const TechStack = () => {
           name: "Realm",
           icon: "https://avatars.githubusercontent.com/u/7575099?s=200&v=4",
         },
+        {
+          name: "Flutter",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+        },
+        {
+          name: "Dart",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
+        },
+        {
+          name: "Kotlin",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+        },
+        {
+          name: "Swift",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
+        },
       ],
     },
     {
@@ -192,7 +208,7 @@ const TechStack = () => {
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -100px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -100px 0px" },
     );
 
     const children = containerRef.current?.querySelectorAll(".tech-item");

@@ -13,18 +13,32 @@ const Experience = () => {
 
   const experienceItems: ExperienceItem[] = [
     {
+      title: "Senior Mobile Application Engineer",
+      company: "Veroke",
+      location: "Islamabad, Pakistan",
+      period: "August 2025 - Present",
+      achievements: [
+        "Architect and lead the development of scalable, high-performance mobile applications using React Native and Flutter.",
+        "Designed modular mobile architecture ensuring maintainability, reusability, and long-term scalability across projects.",
+        "Integrated agentic AI systems to automate repetitive workflows and enhance intelligent user personalization, significantly improving user engagement and retention.",
+        "Collaborate cross-functionally with product managers, designers, and backend engineers to translate business requirements into scalable technical solutions.",
+        "Drive adoption of modern development standards including CI/CD pipelines, code quality automation, and structured release management.",
+        "Mentor junior and mid-level engineers through architectural guidance, code reviews, and technical workshops to elevate overall engineering quality.",
+      ],
+    },
+    {
       title: "Senior React Native Engineer",
       company: "Bitsol Technologies",
       location: "Islamabad, Pakistan",
-      period: "December 2022 - Present",
+      period: "December 2022 - Jun 2025",
       achievements: [
-        "Architect, design, and develop robust and scalable mobile applications using React Native.",
-        "Collaborate with product managers and cross-functional teams to define project goals, scope, and deliverables.",
-        "Write structured JavaScript code for developing efficient mobile applications.",
-        "Optimize app performance and enhance user experience through performance profiling and tuning.",
-        "Stay abreast of the latest advancements in React Native, mobile app development, and related technologies.",
-        "Automated code quality checks using Husky, lint-staged, and commit-lint for enforcing commit message conventions, improving the development workflow.",
-        "Maintained transparent communication with the Project Manager and client, providing regular project status updates and addressing challenges proactively.",
+        "Led architecture and end-to-end development of scalable React Native applications serving thousands of active users.",
+        "Collaborated closely with product managers, designers, and backend teams to define technical scope, roadmap, and delivery milestones.",
+        "Designed modular and maintainable codebases using TypeScript, improving long-term scalability and reducing technical debt.",
+        "Optimized application performance by profiling memory usage, reducing re-renders, and improving API handling, resulting in smoother UX and faster load times.",
+        "Implemented CI/CD improvements and automated code quality enforcement using Husky, lint-staged, and commit-lint, significantly improving development workflow consistency.",
+        "Provided proactive communication with clients and stakeholders, ensuring transparency, risk mitigation, and on-time project delivery.",
+        "Mentored junior developers through code reviews and architectural guidance, improving overall team code quality.",
       ],
     },
     {
@@ -33,25 +47,31 @@ const Experience = () => {
       location: "Islamabad, Pakistan",
       period: "February 2022 - December 2022",
       achievements: [
-        "Develop and maintain scalable and performant mobile applications using React Native.",
-        "Created web portals using Next.js to improve user experiences and expand mobile application functionality.",
-        "Engineered reliable and scalable backends utilizing Node.js and Express.js to manage data and transactions for various projects.",
-        "Successfully deployed applications and services on platforms such as Digital Ocean and GoDaddy, ensuring high availability and performance.",
-        "Created responsive and dynamic web applications using the MERN stack",
-        "Designed and implemented trading journal applications to help traders record and analyze their trading activities efficiently.",
-        "Effectively communicated with clients, providing regular updates and addressing concerns and suggestions to achieve project goals.",
+        "Developed and maintained high-performance cross-platform mobile applications using React Native for Android and iOS.",
+        "Designed scalable mobile architecture using Redux Toolkit, Context API, and modular component patterns to improve maintainability.",
+        "Implemented complex navigation flows using React Navigation including deep linking and nested navigators.",
+        "Integrated RESTful APIs with efficient data caching, error handling, and asynchronous state management.",
+        "Optimized application performance by minimizing unnecessary re-renders, improving memory usage, and reducing app startup time.",
+        "Implemented push notifications, background tasks, and device-specific native integrations where required.",
+        "Managed app release cycles including build generation, environment configuration, and deployment to Google Play Store and Apple App Store.",
+        "Expanded product ecosystem by building supporting web portals using Next.js to complement mobile functionality.",
+        "Collaborated directly with clients and cross-functional teams to deliver feature-rich and business-aligned mobile solutions.",
       ],
     },
     {
-      title: "Software Engineer",
-      company: "Techinn360",
-      location: "Rawalpindi, Pakistan",
-      period: "July 2022 - February 2023",
+      title: "Mobile Application Developer",
+      company: "Develo IT Solutions",
+      location: "Islamabad, Pakistan",
+      period: "April 2020 - January 2022",
       achievements: [
-        "Took charge of custom web client development using React, Bootstrap, React Query, React Data Table (Server-side pagination) and Formik.",
-        "Implemented robust NodeJS, Express web server to communicate with MySQL database.",
-        "Used Prisma ORM to facilitate data modelling and building SQL queries.",
-        "Delivered maintainable, well-documented code with comprehensive unit and integration tests.",
+        "Developed and maintained cross-platform mobile applications using React Native and Flutter.",
+        "Designed scalable mobile architectures using Redux, Redux Toolkit, Redux Saga, Context API, Bloc, GetX, Provider, and Riverpod.",
+        "Implemented modern, responsive UI systems with reusable components and advanced animations.",
+        "Integrated Firebase, REST APIs, and GraphQL services ensuring secure and efficient backend communication.",
+        "Strengthened application stability through unit, widget, and integration testing using Jest, Detox, and Flutter testing frameworks.",
+        "Collaborated with cross-functional teams to deliver high-quality production-ready applications.",
+        "Improved development lifecycle by contributing to CI/CD pipelines using Fastlane, GitHub Actions, App Store, and Google Play deployment workflows.",
+        "Contributed to code reviews, secure coding standards, and continuous performance optimization initiatives.",
       ],
     },
   ];
@@ -65,7 +85,7 @@ const Experience = () => {
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -100px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -100px 0px" },
     );
 
     const items = containerRef.current?.querySelectorAll(".experience-item");
